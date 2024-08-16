@@ -15,17 +15,30 @@
             align-items: center;
             background-color: #f4f4f4; /* Light grey background */
         }
-
+        .content {
+            text-align: center;
+        }
         img {
             width: 500px; /* or any size you want */
             height: auto; /* maintain aspect ratio */
             display: block; /* to remove any extra space beneath the image */
+            margin-bottom: 20px; /* Add some space between the image and the link */
+        }
+        a {
+            color: #333; /* Dark grey color for the link */
+            text-decoration: none; /* Remove underline */
+            font-family: Arial, sans-serif; /* Change font as needed */
+        }
+        a:hover {
+            text-decoration: underline; /* Add underline on hover */
         }
     </style>
 </head>
 <body>
-    <!-- Image path assumes 'logo.png' is in the same directory as your HTML file -->
-    <img src="covermate_logo2.png" alt="Logo">
-    <a href="/privacy-policy">Privacy Policy</a>
+    <div class="content">
+        <!-- Image path assumes 'logo.png' is in the same directory as your HTML file -->
+        <img src="covermate_logo2.png" alt="Logo">
+        <a href="/privacy-policy">Privacy Policy</a>
+    </div>
 </body>
 </html>
